@@ -34,7 +34,7 @@ class usr_signup_sng{
 	{
 		return $this->email;
 	}
-	function pass()
+	function getPass()
 	{
 		 return $this->pass;
 	}
