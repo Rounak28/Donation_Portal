@@ -15,11 +15,11 @@ class usr_signup_sng{
 	{
 		$this->email=$email;
 	}
-	function setPass()
+	function setPass($pass)
 	{
 		$this->pass=$pass;
 	}
-	function setPhone()
+	function setPhone($phone)
 	{
 		$this->phone=$phone;
 	}
