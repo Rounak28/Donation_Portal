@@ -11,7 +11,7 @@ class org_signup_sng{
 	{
 		$this->name=$name;
 	}
-	function setemail($email)
+	function setEmail($email)
 	{
 		$this->email=$email;
 	}

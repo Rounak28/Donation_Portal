@@ -1,10 +1,10 @@
 <?php
 include '/../models/setters_getters/usr_signup_sng.php';
-include '/../models/signup.php';
+include '/../models/signupU.php';
 class usr_signup
 {
 	private $usrbean=NULL;
-	private $signup=NULL;
+	private $usr_model=NULL;
 	
 	function __construct()
 	{
@@ -23,8 +23,8 @@ class usr_signup
 	$this->usrbean->setPass($pass);
 	$this->usrbean->setPhone($phone);
 	
-	$this->signup=new signup($this->usrbean);
-	$this->signup->store_usr_date();
+	$this->usr_model=new signupU($this->usrbean);
+	$this->usr_model->store_usr_data();
 	
 	}
 	
