@@ -2,16 +2,15 @@
 
 class signup
 {
-	private $obj=NULL;
 	private $name=NULL;
 	private $phone=NULL;
 	private $pass=NULL;
 	private $email=NULL;
 	function __construct()
 	{
-		
+		$usrbean=new usr_signup_sng();	
 	}
-	function getvalues($obj)
+	function getvalues($usrbean)
 	{
 	   
 	}
