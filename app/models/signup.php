@@ -1,5 +1,5 @@
 <?php
-
+include '/../../db_connection.php';
 class signup
 {
 	private $name=NULL;
@@ -13,6 +13,11 @@ class signup
 	function getvalues($usrbean)
 	{
 	   
+	}
+	
+	function store_usr_date()
+	{
+			
 	}
 }
 
