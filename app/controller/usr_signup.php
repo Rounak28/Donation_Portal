@@ -4,11 +4,11 @@ include '/../models/signup.php';
 class usr_signup
 {
 	private $usr_bean=NULL;
-	private $signmodel=NULL;
+	private $signup=NULL;
 	
 	function __construct()
 	{
-	  $this->signmodel= new signup();
+	  $this->signup= new signup();
 	  $this->usrbean=new usr_signup_sng();	
 	}
 	function requestAndBean()
@@ -23,7 +23,7 @@ class usr_signup
 	$this->usrbean->setPass($pass);
 	$this->usrbean->setPhone($phone);
 	
-	$this->signmodel->getvalues($this->usrbean);
+	$this->signup->getvalues($this->usrbean);
 	
 	
 	
