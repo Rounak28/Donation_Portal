@@ -14,6 +14,9 @@ class usr_signup
 	$pass=$_POST["pass"];
 	$phone=$_POST["phone"];
 	$this->usrbean->setName($name);
+	$this->usrbean->setemail($email);
+	$this->usrbean->setPass($pass);
+	$this->usrbean->setPhone($phone);
 	echo $this->usrbean->getName();
 	
 	}
