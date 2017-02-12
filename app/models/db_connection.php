@@ -13,6 +13,7 @@ try {
 $conn=new PDO("mysql:host=$servername;dbname=portal",$username,$password);
 echo "connection sucessfull";
 $conn->exec($sql);
+
 }
 catch (PDOException $e)
 {
