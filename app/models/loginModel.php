@@ -6,19 +6,29 @@ class loginModel
 	//private $pass=NULL;
 	function login($email,$pass)
 	{
+		
 		$sql="select name from user where email='$email' && pass='$pass'";
 		$conn=new db_connection();
 		$conn=$conn->db_Conn();
 		$conn=$conn->query($sql);
 		if($conn->rowCount()==0)
 		{
-			echo 'No user exist';
+			 $sql="select name from ORG where email='$email' && pass='$pass'";
+			 $conn=new db_connection();
+			 $conn=$conn->db_Conn();
+			 $conn=$conn->query($sql);
+			 	if($conn->rowCount()>0)
+			 	{
+			 		echo'WELCOME ORGANiZeR';
+			 	}
+			 	else if($conn->rowCount()==0){echo'Invalid emailid or password';}
+			 	else{echo 'Some Problem';}
 		}
 		else if($conn->rowCount()>0)
 		{
-			echo 'User exist';
+			echo 'WELCOME USER';
 		}
-		else {echo 'some problem it is in Else';}
+		else {echo 'SOME PROBLEM.';}
 	}
 }
 ?>

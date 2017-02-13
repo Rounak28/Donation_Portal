@@ -11,10 +11,6 @@ class loginControl
   	$email=$_POST["email"];
     $pass=$_POST["pass"];
     $this->login->login($email,$pass);
-    
-    
-    
-    
   }
 }
 ?>

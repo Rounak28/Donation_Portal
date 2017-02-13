@@ -12,17 +12,18 @@ function __construct($orgbean)
 	 $this->orgbean=$orgbean;
 	 $this->name=$orgbean->getName();
 	 $this->email=$orgbean->getEmail();
-	 $this->pass=$orgbean->getPhone();
+	 $this->pass=$orgbean->getPass();
 	 $this->phone=$orgbean->getPhone();
 	 
 }
 
 function store_org_data()
 {
-	echo $this->name;
 	$sql="INSERT INTO ORG VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
+	$conn=new db_connection();
 	$conn=$conn->db_Conn();
 	$conn->exec($sql);
+	echo 'success';
 }
 }
 ?>
