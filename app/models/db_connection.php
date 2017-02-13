@@ -23,7 +23,6 @@ function db_Conn()
 		$e->getMessage();
 		return $conn;
 	}
-	return $conn;
 	
 
 }
