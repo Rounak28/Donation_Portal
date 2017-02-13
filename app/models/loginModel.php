@@ -1,5 +1,5 @@
 <?php
-include '\db_connection.php';
+require '\db_connection.php';
 class loginModel
 {
 	//private $email=NULL;
@@ -8,7 +8,17 @@ class loginModel
 	{
 		$sql="select name from user where email='$email' && pass='$pass'";
 		$conn=new db_connection();
-		$conn->db_Conn($sql);
+		$conn=$conn->db_Conn();
+		$conn=$conn->query($sql);
+		if($conn->rowCount()==0)
+		{
+			echo 'No user exist';
+		}
+		else if($conn->rowCount()>0)
+		{
+			echo 'User exist';
+		}
+		else {echo 'some problem it is in Else';}
 	}
 }
 ?>

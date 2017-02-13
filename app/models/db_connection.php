@@ -2,23 +2,30 @@
 
 class db_connection
 {
-	
-function db_Conn($sql)
+	private $servername=NULL;
+	private $username=NULL;
+	private $password=NULL;
+	function __construct()
+	{
+		$this->servername = "localhost";
+		$this->username = "root";
+		$this->password = "";
+	 	
+	}
+function db_Conn()
 {
+	try {
+		$conn=new PDO("mysql:host=$this->servername;dbname=portal",$this->username,$this->password);
+		echo "connection sucessfull ";
+		
+		return $conn;
+	}
+	catch (PDOException $e)
+	{
+		$e->getMessage();
+	}
 	
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-try {
-$conn=new PDO("mysql:host=$servername;dbname=portal",$username,$password);
-echo "connection sucessfull";
-$conn->exec($sql);
 
-}
-catch (PDOException $e)
-{
-	$e->getMessage();
-}
 }
 }
 ?>

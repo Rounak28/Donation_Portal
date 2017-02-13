@@ -22,7 +22,8 @@ class signupU
 		
 		$sql="INSERT INTO USER VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
 		$conn=new db_connection();
-		$conn->db_Conn($sql);
+		$conn=$conn->db_Conn();
+		$conn->exec($sql);
 		echo 'success';
 		
 	}

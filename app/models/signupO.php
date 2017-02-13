@@ -21,8 +21,8 @@ function store_org_data()
 {
 	echo $this->name;
 	$sql="INSERT INTO ORG VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
-	$conn=new db_connection();
-	$conn->db_Conn($sql);
+	$conn=$conn->db_Conn();
+	$conn->exec($sql);
 }
 }
 ?>
