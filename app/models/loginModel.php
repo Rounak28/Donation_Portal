@@ -19,7 +19,7 @@ class loginModel
 			 $conn=$conn->query($sql);
 			 	if($conn->rowCount()>0)
 			 	{
-			 		echo'WELCOME ORGANiZeR';
+			 		header('Location: https://www.google.com');
 			 	}
 			 	else if($conn->rowCount()==0){echo'Invalid emailid or password';}
 			 	else{echo 'Some Problem';}

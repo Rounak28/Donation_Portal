@@ -1,4 +1,5 @@
 <?php
+//require '\db_connection.php';
 include '\db_connection.php';
 class signupU
 {
@@ -19,14 +20,21 @@ class signupU
 	
 	function store_usr_data()
 	{
-		
-		$sql="INSERT INTO USER VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
+	$sql="select name from org where email='$this->email'";
+	$conn=new db_connection();
+	$conn=$conn->db_Conn();
+	$conn=$conn->query($sql);
+	if($conn->rowCount()>0)
+	{
+		echo 'EmailID aleady registered';
+	}
+	else if($conn->rowCount()==0){
+		$sql="INSERT INTO ORG VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
 		$conn=new db_connection();
 		$conn=$conn->db_Conn();
-		$conn->exec($sql);
-		echo 'success';
-		
+		$conn=$conn->query($sql);
+		echo 'Registered as user.';
+	}
 	}
 }
-
 ?>

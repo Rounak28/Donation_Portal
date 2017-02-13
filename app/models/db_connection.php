@@ -16,13 +16,14 @@ function db_Conn()
 {
 	try {
 		$conn=new PDO("mysql:host=$this->servername;dbname=portal",$this->username,$this->password);
-		
 		return $conn;
 	}
 	catch (PDOException $e)
 	{
 		$e->getMessage();
+		return $conn;
 	}
+	return $conn;
 	
 
 }
