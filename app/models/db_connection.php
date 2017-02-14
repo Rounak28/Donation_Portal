@@ -21,7 +21,6 @@ function db_Conn()
 	catch (PDOException $e)
 	{
 		$e->getMessage();
-		return $conn;
 	}
 	
 
