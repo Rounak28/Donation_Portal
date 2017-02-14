@@ -20,7 +20,7 @@ class signupU
 	
 	function store_usr_data()
 	{
-	$sql="select name from org where email='$this->email'";
+	$sql="select name from user where email='$this->email'";
 	$conn=new db_connection();
 	$conn=$conn->db_Conn();
 	$conn=$conn->query($sql);
@@ -29,7 +29,7 @@ class signupU
 		echo 'EmailID aleady registered';
 	}
 	else if($conn->rowCount()==0){
-		$sql="INSERT INTO ORG VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
+		$sql="INSERT INTO user VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
 		$conn=new db_connection();
 		$conn=$conn->db_Conn();
 		$conn=$conn->query($sql);
