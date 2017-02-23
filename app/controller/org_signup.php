@@ -10,7 +10,6 @@ class org_signup
 	{
 		$this->orgbean=new org_signup_sng();
 	}
-	
 	function requestAndBean()
 	{
 		$name=$_POST["name"];
