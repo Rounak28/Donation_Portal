@@ -30,6 +30,7 @@ text-decoration:none;
 <a href="organization.html">Organization sign</a>
 <a href="user.html">User signup</a>
 <a href="login.html">Login</a>
+
  </div> </header>
 </body>
 </html>

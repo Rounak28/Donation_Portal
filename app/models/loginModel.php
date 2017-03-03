@@ -27,6 +27,7 @@ class loginModel
 		else if($conn->rowCount()>0)
 		{
 			echo 'WELCOME USER';
+			header('location:../../app/view/user_dashboard.php');
 		}
 		else {echo 'SOME PROBLEM.';}
 	}
