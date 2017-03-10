@@ -1,16 +1,34 @@
 <?php
-include '/../Models/loginModel.php';
+require '/../Models/loginModel.php';
+
 class loginControl
 {
-	private $login=NULL;
+	private $email=NULL;
+	private $pass=NULL;
 	function __construct(){
-  	$this->login=new loginModel();
+		
 	}
   function RequestAndResponse()
   {
-  	$email=$_POST["email"];
-    $pass=$_POST["pass"];
-    $this->login->login($email,$pass);
+  	$this->email=$_POST["email"];
+  	$this->pass=$_POST["pass"];
+  	$email=$this->email;
+  	$pass=$this->pass;
+  	
+  	$login=new loginModel();
+    
+    if($login->login($email, $pass)==FALSE)
+    {
+    	echo'<p>Invalid Email Password</p>';
+    }
+    else if($login->login($email, $pass)=='org')
+    {
+    	echo'<p>Welcome org</p>';
+    }
+    else if($login->login($email, $pass)=='usr')
+    {
+    	echo'<p>Welcome User</p>';
+    }
   }
 }
 ?>
