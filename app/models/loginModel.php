@@ -7,6 +7,7 @@ class loginModel
 	
 	function login($email,$pass)
 	{
+		
 		$_SESSION["email"]=$email;
 		$_SESSION["pass"]=$pass;
 		$sql="select name from user where email='$email' && pass='$pass'";

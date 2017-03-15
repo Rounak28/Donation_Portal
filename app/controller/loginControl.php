@@ -3,8 +3,8 @@ require '/../Models/loginModel.php';
 
 class loginControl
 {
-	private $email=NULL;
-	private $pass=NULL;
+	private $email;
+	private $pass;
 	function __construct(){
 		
 	}
