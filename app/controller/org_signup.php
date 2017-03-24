@@ -1,6 +1,6 @@
 <?php
-include '/../models/setters_getters/org_signup_sng.php';
-include '/../models/signupO.php';
+require '../../app/models/setters_getters/org_signup_sng.php';
+require '../../app/models/signupO.php';
 class org_signup
 {
 	private $orgbean;

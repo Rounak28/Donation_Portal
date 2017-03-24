@@ -1,5 +1,6 @@
 <?php
-require '\db_connection.php';
+//namespace \loginModel::class;
+include 'db_connection.php';
 class loginModel
 {
 	//private $email=NULL;
@@ -7,33 +8,36 @@ class loginModel
 	
 	function login($email,$pass)
 	{
-		
-		$_SESSION["email"]=$email;
-		$_SESSION["pass"]=$pass;
-		$sql="select name from user where email='$email' && pass='$pass'";
 		$conn=new db_connection();
 		$conn=$conn->db_Conn();
-		$conn=$conn->query($sql);
-		if($conn->rowCount()==0)
+		$stmt=$conn->prepare("SELECT * FROM `civilian`  where Email_id=? && Password=?");
+		$stmt->bindParam(1, $email);
+		$stmt->bindParam(2, $pass);
+		$stmt->execute();
+		$result=$stmt->rowCount();
+		if($result==0)
 		{
-			 $sql="select name from ORG where email='$email' && pass='$pass'";
-			 $conn=new db_connection();
-			 $conn=$conn->db_Conn();
-			 $conn=$conn->query($sql);
-			 	if($conn->rowCount()>0)
+			 $stmt=$conn->prepare("SELECT * FROM `organisation` where Email_id=? && Password=? ");
+			 $stmt->bindParam(1,$email);
+			 $stmt->bindParam(2,$pass);
+			 $stmt->execute();
+			 $result=$stmt->rowCount();
+			 	if($result)
 			 	{
 			 		return 'org';
 			 	}
-			 	else if($conn->rowCount()==0){
+			 	else if(!$result){
 			 		return FALSE;
 			 	}
-			 	else{echo 'Some Problem';}
+			 	else{echo 'Some Problem';
+			 	return;}
 		}
-		else if($conn->rowCount()>0)
+		else if($result)
 		{		
 			return 'usr';
 		}
-		else {echo 'SOME PROBLEM.';}
+		else {echo 'SOME PROBLEM.';
+		return;}
 	}
 		
 }

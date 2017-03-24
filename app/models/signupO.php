@@ -1,5 +1,5 @@
 <?php
-include '\db_connection.php';
+include 'db_connection.php';
 class signupO
 {
 private $orgbean=NULL;
@@ -18,21 +18,23 @@ function __construct($orgbean)
 
 function store_org_data()
 {
-	$sql="select name from org where email='$this->email'";
 	$conn=new db_connection();
 	$conn=$conn->db_Conn();
-	$conn=$conn->query($sql);
-	if($conn->rowCount()>0)
+	
+	$stmt=$conn->prepare("INSERT INTO `organisation` (`Oid`, `Name`, `Password`, `Email_id`, `Mobile no`, `Address`, `Dropoff`, `State`, `Country`) 
+			VALUES ('o5',?,?,?,?, 'add', 'drop', 'state', 'country')");
+	
+	$stmt->bindParam(1,$this->name,PDO::PARAM_STR);
+	$stmt->bindParam(2,$this->pass,PDO::PARAM_STR);
+	$stmt->bindParam(3,$this->email,PDO::PARAM_STR);
+	$stmt->bindParam(4,$this->phone);
+	$result=$stmt->execute();
+	if($result)
 	{
-		echo 'EmailID aleady registered';
+		echo 'Regustered as org.';
 	}
-	else if($conn->rowCount()==0){
-	$sql="INSERT INTO ORG VALUES('$this->name','$this->email',$this->phone,'$this->pass')";
-	$conn=new db_connection();
-	$conn=$conn->db_Conn();
-	$conn=$conn->query($sql);
-	echo 'Registered as organization';
-	}
+	else {echo 'problem';}
+		
 }
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
-include '/../models/setters_getters/usr_signup_sng.php';
-include '/../models/signupU.php';
+include '../../app/models/setters_getters/usr_signup_sng.php';
+include '../../app/models/signupU.php';
 class usr_signup
 {
 	private $usrbean=NULL;
@@ -16,7 +16,6 @@ class usr_signup
 	$email=$_POST["email"];
 	$pass=$_POST["pass"];
 	$phone=$_POST["phone"];
-	
 	
 	$this->usrbean->setName($name);       //initializing bean class with values...for encapsulation
 	$this->usrbean->setemail($email);
