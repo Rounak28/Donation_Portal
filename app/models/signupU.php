@@ -30,7 +30,7 @@ class signupU
 		$conn=$conn->db_Conn();
 		
 			$stmt=$conn->prepare("INSERT INTO `civilian` (`Cid`, `Name`, `Password`, `Mobile_no`, `Email_id`, `Aadhar_Card_Verification`, `Address`, `State`, `Country`) 
-					VALUES ('C5', ?, ?, ?,?, '123', 'add1', 'state', 'India')");
+					VALUES ('C123', ?, ?, ?,?, '123', 'add1', 'state', 'India')");
 
 			$stmt->bindParam(1,$this->name,PDO::PARAM_STR);
 		    $stmt->bindParam(2,$this->pass,PDO::PARAM_STR);

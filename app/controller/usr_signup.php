@@ -13,7 +13,7 @@ class usr_signup
 	function requestAndBean()
 	{
 	$name=$_POST["name"];
-	$email=$_POST["email"];
+	$email=$_POST["emailid"];
 	$pass=$_POST["pass"];
 	$phone=$_POST["phone"];
 	
