@@ -1,21 +1,20 @@
 <?php
-
 include '../controller/loginControl.php';
+//include 'db_connection.php';
 $conn=new db_connection();
 $conn=$conn->db_Conn();
-
-$login=loginControl()::class;
-$email=$login->email;
-
-$sql="SELECT * FROM `civilian where Email=id=$email";
+$id=$_SESSION['email'];
+echo $id;
+/*$sql="SELECT * FROM `civilian` where Email=id=$s_email";
 $result=$conn->query($sql);
 while($row=$result->fetch(PDO::FETCH_ASSOC))
 {
-	echo "<b>Name:".$row["Name"];
+	echo $row;
 	?>
 	<br>
 <?php
 }
 ?>
 <table>
-</table>
+</table>*/
+?>
