@@ -23,7 +23,14 @@ class org_signup_sng{
 	{
 		$this->phone=$phone;
 	}
-
+	function setCity($city)
+	{
+		$this->city=$city;
+	}
+	function setAdd($address)
+	{
+		$this->address=$address;
+	}
 	//getters
 
 	function getName()
@@ -41,5 +48,13 @@ class org_signup_sng{
 	function getPhone()
 	{
 		return $this->phone;
+	}
+	function getAdd()
+	{
+		return $this->address;
+	}
+	function getCity()
+	{
+		return $this->city;
 	}
 }

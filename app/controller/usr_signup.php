@@ -16,16 +16,19 @@ class usr_signup
 	$email=$_POST["emailid"];
 	$pass=$_POST["pass"];
 	$phone=$_POST["phone"];
+	$address=$_POST["add"];
+	$city=$_POST["city"];
+	
 	
 	$this->usrbean->setName($name);       //initializing bean class with values...for encapsulation
 	$this->usrbean->setemail($email);
 	$this->usrbean->setPass($pass);
 	$this->usrbean->setPhone($phone);
+	$this->usrbean->setAdd($address);
+	$this->usrbean->setCity($city);
 	
 	$this->usr_model=new signupU($this->usrbean);
 	$this->usr_model->store_usr_data();
 	
-	}
-	
-	
+	}	
 }

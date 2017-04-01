@@ -6,8 +6,19 @@ class usr_signup_sng{
 	private $email;
 	private $pass;
 	private $phone;
-
-	public function setName($name)
+	private $address;
+	private $city;
+	
+	
+	function setCity($city)
+	{
+		$this->city=$city;
+	}
+	function setAdd($address)
+	{
+		$this->address=$address;
+	}
+	function setName($name)
 	{
 		$this->name=$name;
 	}
@@ -41,5 +52,13 @@ class usr_signup_sng{
 	function getPhone()
 	{
 		return $this->phone;
+	}
+	function getAdd()
+	{
+		return $this->address;
+	}
+	function getCity()
+	{
+		return $this->city;
 	}
 }

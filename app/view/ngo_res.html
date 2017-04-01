@@ -80,32 +80,33 @@
                 --> <h3 class="text-theme-colored mt-0 pt-5">Register Now</h3>
               <hr>
               
-              <form id="job_apply_form" name="job_apply_form" action="http://kodesolution.com/demo/wxyz/y/ngopress/v2.0/demo/includes/job.php" method="post" enctype="multipart/form-data">
+              <form method='POST' action='../../public/html/org_controller.php'>
+               
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Name <small>*</small></label>
-                      <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
+                      <input name="name" type="text" placeholder="Enter Name" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Email <small>*</small></label>
-                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                      <label>Email<small>*</small></label>
+                      <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
                     </div>
                   </div>
                 </div>
-				<div class="row">
+				<!--  <div class="row">
 				<div class="col-sm-6">
                     <div class="form-group">
                       <label>UserName <small>*</small></label>
                       <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
                     </div>
-                  </div>
+                  </div>-->
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Password <small>*</small></label>
-                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                      <label>Password<small>*</small></label>
+                      <input name="pass" class="form-control required email" type="password" placeholder="Password">
                     </div>
                   </div>
                 </div>
@@ -114,15 +115,15 @@
 				 
                 <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Conform Password <small>*</small></label></p>
+                      <label>Conform Password<small>*</small></label></p>
                      
-					  <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
+					  <input type="password" placeholder="Confirm Password" class="form-control">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label>Mobile Number <small>*</small></label>
-                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                      <label>Mobile Number<small>*</small></label>
+                      <input name="phone" class="form-control required email" type="tel" placeholder="Phone number">
                     </div>
                   </div>
                 </div>
@@ -130,8 +131,8 @@
                     <div class="form-group">
                       <label>Address <small>*</small></label></p>
                      
-					  <input name="form_name" type="text" placeholder="Enter Name" required="" class="form-control">
-                    
+					  <input name="add" type="text" placeholder="Address" class="form-control">
+              
                   </div>
 				<div class="row">               
                   <div class="col-sm-6">
@@ -140,14 +141,14 @@
 
             <select class="select-style city" name="city">
 
-            <option value="select">Select--</option>
-            <option value="m">Ahemdabad</option>
-            <option value="f">Gandhinagar</option>
-            <option value="others">Surat</option>
-			<option value="others">Rajkot</option>
-			<option value="others">Anand</option>
-			<option value="others">Vadodra</option>
-			<option value="others">Jamnagar</option>
+            <option value="">Select--</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Surat">Surat</option>
+			<option value="Rajkot">Rajkot</option>
+			<option value="Anand">Anand</option>
+			<option value="Vadodra">Vadodra</option>
+			<option value="Jamnagar">Jamnagar</option>
             </select>
 	</div></div>
                  
@@ -158,9 +159,14 @@
                   <small>Maximum upload file size: 12 MB</small>
                 </div>
                 </div> 
-<!--                    <button type="submit" class="btn btn-default btn-sm">Login</button>
-    -->
-	 <input type="button" onclick="location.href='loginform1.html';"  value="Register me" /> 
+
+<div>
+<input type="text" placeholder="Pickup point 1">
+<p>
+<input type="text" placeholder="Pickup point 2">
+</div>
+
+	 <input type="submit" value="Register me" /> 
 	</div>
                   
                   

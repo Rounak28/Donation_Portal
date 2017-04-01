@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-
-<!-- Mirrored from kodesolution.com/demo/wxyz/y/ngopress/v2.0/demo/index-boxed-mp-layout2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Jan 2017 17:43:29 GMT -->
 <head>
 
 <!-- Meta Tags -->
@@ -67,10 +66,17 @@
 </head>
 <body class="boxed-layout pt-40 pb-40 pt-sm-0" data-bg-img="images/pattern/p26.png">
 <div id="wrapper" class="clearfix">
-  
+  <!-- preloader 
+  <div id="preloader">
+    <div id="spinner">
+      <img class="floating" src="images/preloaders/13.png" alt="">
+      <h5 class="line-height-50 font-18 ml-15">Loading...</h5>
+    </div>
+    <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+  </div>
   
   <!-- Header -->
-  <header id="header" class="header">
+    <header id="header" class="header">
     <div class="header-top p-0 bg-theme-colored xs-text-center" data-bg-img="images/footer-bg.png">
       <div class="container pt-20 pb-20">
         <div class="row">
@@ -108,7 +114,7 @@
         </div>
       </div>
     </div></header>
-    <header class="header">
+  <header class="header">
     <div class="header-top bg-theme-colored sm-text-center">
       <div class="container">
         <div class="row">
@@ -140,7 +146,8 @@
       </div>
     </div>
   </header>
- <!-- Start main-content -->
+  
+  <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: home -->
     <section id="home">
@@ -152,14 +159,15 @@
             <ul>
 
               <!-- SLIDE 1 -->
-              <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg3.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 3" data-description="">
+              <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg2.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="images/bg/bg3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                <img src="images/bg/bg2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 <!-- LAYERS -->
 
                 <!-- LAYER NR. 1 -->
                 <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway bg-theme-colored-transparent pr-20 pl-20"
                   id="rs-1-layer-1"
+                  
 
                   data-x="['right']"
                   data-hoffset="['30']"
@@ -182,7 +190,7 @@
                   style="z-index: 7; white-space: nowrap; font-weight:600;"><span class="">Help</span> The Poor
                 </div>
 
-                <!-- LAYER NR. 2 -->
+                  <!-- LAYER NR. 2 -->
                 <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
                   id="rs-1-layer-2"
 
@@ -256,7 +264,7 @@
                 </div>
               </li>
 
-              <!-- SLIDE 2 -->
+             <!-- SLIDE 2 -->
               <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg13.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide 2" data-description="">
                 <!-- MAIN IMAGE -->
                 <img src="images/bg/bg13.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
@@ -567,8 +575,7 @@
         <!-- Slider Revolution Ends -->
       </div>
     </section>
-
-    <!-- Section: About  -->
+	   <!-- Section: About  -->
     <section>
       <div class="container">
         <div class="section-content">
@@ -613,7 +620,84 @@
 
     <!-- Section: Our Mission & Upcoming Events -->
     <section id="event">
-     
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-7">
+              <h3 class="text-uppercase title line-bottom mt-0 mb-30 mt-sm-40"><i class="fa fa-thumb-tack text-gray-darkgray mr-10"></i>Latest <span class="text-theme-colored">Causes</span></h3>
+              <div class="owl-carousel-2col" data-nav="true">
+                <div class="item">
+                  <div class="causes bg-white maxwidth500 mb-sm-30">
+                    <div class="thumb">
+                      <img src="images/project/2.jpg" alt="" class="img-fullwidth">
+                      <div class="overlay-donate-now">
+                        <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                      </div>
+                    </div>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
+                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
+                        <li class="pull-left pr-0">Raised: $1890</li>
+                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="causes bg-white maxwidth500 mb-sm-30">
+                    <div class="thumb">
+                      <img src="images/project/6.jpg" alt="" class="img-fullwidth">
+                      <div class="overlay-donate-now">
+                        <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                      </div>
+                    </div>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
+                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
+                        <li class="pull-left pr-0">Raised: $1890</li>
+                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="causes bg-white maxwidth500 mb-sm-30">
+                    <div class="thumb">
+                      <img src="images/project/7.jpg" alt="" class="img-fullwidth">
+                      <div class="overlay-donate-now">
+                        <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
+                      </div>
+                    </div>
+                    <div class="progress-item mt-0">
+                      <div class="progress mb-0">
+                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
+                      </div>
+                    </div>
+                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
+                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
+                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
+                        <li class="pull-left pr-0">Raised: $1890</li>
+                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
               <h3 class="text-uppercase title line-bottom mt-0 mt-sm-30 mb-30"><i class="fa fa-calendar text-gray-darkgray mr-10"></i>Upcoming <span class="text-theme-colored">Events</span></h3>
               <article class="post media-post clearfix pb-0 mb-10">
                 <a href="#" class="post-thumb mr-20"><img alt="" src="images/events/1.jpg"></a>
@@ -654,12 +738,9 @@
             </div>
           </div>
         </div>
-     <!-- </div>
-    --></section>
-
-   
-    <!-- Section: volunteers -->
-    <section id="volunteers">
+      </div>
+    </section>
+	    <section id="volunteers">
       <div class="container">
         <div class="section-title">
           <div class="row">
@@ -754,8 +835,6 @@
       </div>
     </section>
 
-   
-
     <!-- Section: Gallery -->
     <section id="gallery">
       <div class="container pb-10">
@@ -799,6 +878,38 @@
                 <!-- Portfolio Item End -->
                 
                 <!-- Portfolio Item Start -->
+                <div class="gallery-item">
+                  <div class="thumb">
+                    <img alt="project" src="images/gallery/gallery-md3.jpg" class="img-fullwidth">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="images/gallery/gallery-lg3.jpg"  data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                
+                <!-- Portfolio Item Start -->
+                <div class="gallery-item">
+                  <div class="thumb">
+                    <img alt="project" src="images/gallery/gallery-md3.jpg" class="img-fullwidth">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="images/gallery/gallery-lg3.jpg"  data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                
+                 <!-- Portfolio Item Start -->
                 <div class="gallery-item">
                   <div class="thumb">
                     <img alt="project" src="images/gallery/gallery-md3.jpg" class="img-fullwidth">
@@ -1070,9 +1181,7 @@
         </div>
       </div>
     </div>
-	
   </footer>
-  <script src="js/custom.js"></script>
   <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
 <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
@@ -1086,7 +1195,3 @@
 
 <!-- Mirrored from kodesolution.com/demo/wxyz/y/ngopress/v2.0/demo/index-rtl-mp-layout5.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Jan 2017 17:43:31 GMT -->
 </html>
-<!--
-Vicas Foundation
-Indian dream foundation
-Muskan Foundation -->

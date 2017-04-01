@@ -16,7 +16,6 @@ class loginControl
   	$email=$this->email;
   	$pass=$this->pass;
   	
-  	
   	$login=new loginModel();
     
     if($login->login($email, $pass)==FALSE)
