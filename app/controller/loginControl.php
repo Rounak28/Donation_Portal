@@ -1,7 +1,7 @@
 <?php
 //session_start();
 require '..\..\app\models\loginModel.php';
-
+session_start();
 //use loginModel;
 class loginControl
 {
@@ -26,18 +26,17 @@ class loginControl
     
     else if($login->login($email, $pass)=='org')
     {
-    	$_SESSION['email']=$this->email;
-    	$_SESSION['pass']=$this->pass;
- 
-    	echo'<p>Welcome ',$email;
-     header('location:/../app/view/Home_Org.html');   	
+    $_SESSION["$email"]=$this->email;
+    	echo'<p>Welcome ',$_SESSION["email"];
+     //header('location:/../app/view/Home_Org.html'); 
+     http://localhost/app/view/Home_User.html
     }
     else if($login->login($email, $pass)=='usr')
     {
-    	$_SESSION['email']=$this->email;
-    	$_SESSION['pass']=$this->pass;
-    	echo'<p>Welcome ',$email;
-    	header('location:/../app/view/Home_User.html');
+    $_SESSION["email"]=$this->email;	
+    	
+    	//header('location:/../app/view/Home_User.html');
+    	echo'<p>Welcome ',$_SESSION["email"];
     }
   }
 }
