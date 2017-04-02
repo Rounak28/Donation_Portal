@@ -17,7 +17,7 @@ class loginModel
 		$result=$stmt->rowCount();
 		if($result==0)
 		{
-			 $stmt=$conn->prepare("SELECT * FROM `organisation` where Email_id=? && Password=? ");
+			 $stmt=$conn->prepare("SELECT * FROM `organisation` where Emailid=? && Password=? ");
 			 $stmt->bindParam(1,$email);
 			 $stmt->bindParam(2,$pass);
 			 $stmt->execute();

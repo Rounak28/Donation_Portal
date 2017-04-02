@@ -1,3 +1,15 @@
+<?php
+include '../controller/loginControl.php';
+
+if(isset($_SESSION["email_user"]))
+{
+header('location:Home_User.html');
+}
+if(isset($_SESSION["email_org"]))
+{
+header('location:Home_Org.html');
+}
+?>
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
 
