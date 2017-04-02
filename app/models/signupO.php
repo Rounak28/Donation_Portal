@@ -25,7 +25,7 @@ function store_org_data()
 	$conn=new db_connection();
 	$conn=$conn->db_Conn();
 	
-	$stmt=$conn->prepare("INSERT INTO `organisation` (`Name`, `Password`, `Emailid`, `Mobile no`, `Address`, `Dropoff`, `City`, `State`) 
+	$stmt=$conn->prepare("INSERT INTO `organisation` (`Name`, `Password`, `Emailid`, `Mobile_no`, `Address`, `Dropoff`, `City`, `State`) 
 			VALUES (?,?,?,?,?,'drop', ?, 'Gujarat')");
 	
 	$stmt->bindParam(1,$this->name,PDO::PARAM_STR);
