@@ -32,26 +32,26 @@ class signupU
 		$conn=new db_connection();
 		$conn=$conn->db_Conn();
 		$cid_no=random_int(1,1000);
-		$cid=$this->email+(string)$cid_no;
 		
-			$stmt=$conn->prepare("INSERT INTO `civilian` (`Cid`, `Name`, `Password`, `Mobile_no`, `Email_id`, `Aadhar_Card_Verification`, `Address`, `City`, `State`) 
-					VALUES (?, ?, ?, ?,?, '123',?, ?, 'Gujarat')");
+		
+			$stmt=$conn->prepare("INSERT INTO `civilian` (`Name`, `Password`, `Mobile_no`, `Email_id`, `Aadhar_Card_Verification`, `Address`, `City`, `State`) 
+					VALUES (?, ?, ?,?, '123',?, ?, 'Gujarat')");
 
-			$stmt->bindParam(1,$cid,PDO::PARAM_STR);
-			$stmt->bindParam(2,$this->name,PDO::PARAM_STR);
-		    $stmt->bindParam(3,$this->pass,PDO::PARAM_STR);
-		    $stmt->bindParam(4,$this->phone);
-			$stmt->bindParam(5,$this->email,PDO::PARAM_STR);			
-			$stmt->bindParam(6,$this->add,PDO::PARAM_STR);
-			$stmt->bindParam(7,$this->city,PDO::PARAM_STR);
+			
+			$stmt->bindParam(1,$this->name,PDO::PARAM_STR);
+		    $stmt->bindParam(2,$this->pass,PDO::PARAM_STR);
+		    $stmt->bindParam(3,$this->phone);
+			$stmt->bindParam(4,$this->email,PDO::PARAM_STR);			
+			$stmt->bindParam(5,$this->add,PDO::PARAM_STR);
+			$stmt->bindParam(6,$this->city,PDO::PARAM_STR);
 			
 		//	$stmt->bindParam(':phone',$this->phone);
 			$result=$stmt->execute();
 			if($result)
 		    {
-		    	echo 'Regustered as user.';
+		    	return $result;
 		    }
-		    else {echo 'problem';}
+		    return $result;
 		
 	}
 }

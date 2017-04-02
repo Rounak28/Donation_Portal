@@ -28,7 +28,11 @@ class usr_signup
 	$this->usrbean->setCity($city);
 	
 	$this->usr_model=new signupU($this->usrbean);
-	$this->usr_model->store_usr_data();
+	if($this->usr_model->store_usr_data())
+	{
+		header('location:../../app/view/LoginForm.html');
+	}
+	else {header('location:../../app/view/user_reg.html');}
 	
 	}	
 }

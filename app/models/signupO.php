@@ -24,8 +24,8 @@ function store_org_data()
 {
 	$conn=new db_connection();
 	$conn=$conn->db_Conn();
-	$oid=random_int(1,1000);
-	$stmt=$conn->prepare("INSERT INTO `organisation` (`Name`, `Password`, `Email_id`, `Mobile no`, `Address`, `Dropoff`, `City`, `State`) 
+	
+	$stmt=$conn->prepare("INSERT INTO `organisation` (`Name`, `Password`, `Emailid`, `Mobile no`, `Address`, `Dropoff`, `City`, `State`) 
 			VALUES (?,?,?,?,?,'drop', ?, 'Gujarat')");
 	
 	$stmt->bindParam(1,$this->name,PDO::PARAM_STR);
@@ -37,9 +37,9 @@ function store_org_data()
 	$result=$stmt->execute();
 	if($result)
 	{
-		echo 'Regustered as org.';
+		return $result;
 	}
-	else {echo 'problem';}
+	return $result;
 		
 }
 }

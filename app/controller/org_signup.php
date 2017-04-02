@@ -28,6 +28,12 @@ class org_signup
 	    $this->orgbean->setCity($city);
 	    
 		$this->org_model=new signupO($this->orgbean);
-		$this->org_model->store_org_data();
+		
+		if($this->org_model->store_org_data())
+		{
+		 	header('location:../app/../view/LoginForm.html');
+		}
+		else {header('location:../app/../view/ngo_res.html');}
+		
 	}
 }
