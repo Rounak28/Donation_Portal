@@ -67,7 +67,7 @@ $result=$stmt->execute();
 if($result)
 {
 	echo 'Success';
-	header('location:../view/Home_User.html');
+	header('location:../view/');
 }
 else {echo 'problem';}
 }
