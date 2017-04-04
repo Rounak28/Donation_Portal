@@ -100,11 +100,9 @@ header('location:Home_Org.html');
           <div class="col-md-8">
 			 <nav id="menuzord" class="menuzord default bg-silver-light">
             <ul class="menuzord-menu" >
+            
               <li>
-                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href="loginform.html" >Admin </a>
-              </li>
-              <li>
-                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href="loginform.html" >Login </a>
+                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href="loginForm.php" >Login </a>
               </li>    
 			  
               <li>
