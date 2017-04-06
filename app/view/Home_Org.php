@@ -130,7 +130,7 @@ if(isset($_SESSION['email_user']))
                 <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href=".html" >Upload Event</a>
               </li>
               <li>
-                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href=".html" >Dashbord </a>
+                <a class="btn btn-colored btn-flat btn-theme-colored mt-15 ajaxload-popup" href="#dash" >Dashbord </a>
               </li>    
 			  
               <li>
@@ -585,7 +585,7 @@ if(isset($_SESSION['email_user']))
           <div class="row">
             
             <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-              <div class="image-box-thum">
+              <div name="dash" class="image-box-thum">
                 <img class="img-fullwidth" alt="" src="images/photos/2.jpg">
               </div>
               <div class="image-box-details pt-20 pb-sm-20">
