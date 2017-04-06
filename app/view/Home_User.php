@@ -1,12 +1,5 @@
 <?php
-if(!isset($_SESSION['email_Org']))
-{
-	header('location:Index.php');
-}
-if(!isset($_SESSION['email_user']))
-{
-	header('location:Index.php');
-}
+
 if(isset($_SESSION['email_org']))
 {
 	header('location:Home_Org.php');

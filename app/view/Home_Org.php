@@ -1,18 +1,12 @@
+
+<!DOCTYPE html>
 <?php
-if(!isset($_SESSION['email_user']))
-{
-	header('location:Index.php');
-}
-if(!isset($_SESSION['email_org']))
-{
-	header('location:Index.php');
-}
+
 if(isset($_SESSION['email_user']))
 {
-	header('location:Home_User.php');
+	header('location:./Home_User.php');
 }
 ?>
-<!DOCTYPE html>
 <html dir="ltr" lang="en">
 
 <!-- Mirrored from kodesolution.com/demo/wxyz/y/ngopress/v2.0/demo/index-boxed-mp-layout2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Jan 2017 17:43:29 GMT -->

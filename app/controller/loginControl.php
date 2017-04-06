@@ -27,6 +27,7 @@ class loginControl
     $_SESSION["email_org"]=$this->email;
     	//echo'<p>Welcome ',$_SESSION["email"];
      header('location:../../app/view/Home_Org.php'); 
+     echo 'Invalid EmailId Or Password';
      //localhost/app/view/Home_User.html
     }
     else if($login->login($email, $pass)=='usr')
