@@ -26,14 +26,14 @@ class loginControl
     {
     $_SESSION["email_org"]=$this->email;
     	//echo'<p>Welcome ',$_SESSION["email"];
-     header('location:/../app/view/Home_Org.php'); 
+     header('location:../../app/view/Home_Org.php'); 
      //localhost/app/view/Home_User.html
     }
     else if($login->login($email, $pass)=='usr')
     {
     $_SESSION['email_user']=$this->email;	
     	
-    	header('location:/../app/view/Home_User.php');
+    	header('location:../../app/view/Home_User.php');
     	//echo'<p>Welcome ',$_SESSION["email"];
     }
   }
