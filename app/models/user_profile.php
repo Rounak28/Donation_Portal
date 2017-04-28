@@ -12,26 +12,55 @@ if($result)
 {
 while($row=$result->fetch(PDO::FETCH_ASSOC))
 {
-	
-	echo 'Name:         '.$row["Name"];
 	?>
-	<br>
-	<?php 
-	echo 'Mobile_no:	'.$row["Mobile_no"];
-	?>
-	<br>
+	<h2>Profile</h2>
+	<table style="width:25%">
+	 <tr>
+	 <th>Name:</th>
+	 <td>
 	<?php
-	echo 'Email_id:		 '.$row["Email_id"];
+	echo $row["Name"];
 	?>
-	<br>
+	</td>
+	</tr>
+	<tr>
+	 <th>Mobile:</th>
+	 <td>
 	<?php 
-	echo 'Address:       '.$row["Address"];
+	echo $row["Mobile_no"];
 	?>
-	<br>
+	</td>
+	</tr>
+	<tr>
+	
+	<tr>
+	 <th>Email_Id:</th>
+	 <td>
+	
+	<?php
+	echo $row["Email_id"];
+	?>
+	</td>
+	<tr>
+	 <th>Address:</th>
+	 <td>
+	
 	<?php 
-	echo 'City:         '.$row["City"];
+	echo $row["Address"];
 	?>
-	<p>
+	</td>
+	</tr>
+	
+	<tr>
+	 <th>City:</th>
+	 <td>
+	
+	<?php 
+	echo $row["City"];
+	?>
+	</td>
+	</tr>
+	 </table>
 	<a href="">Edit</a>
 	<br>
 	
@@ -48,24 +77,58 @@ if(isset($_SESSION["email_org"]))
 	{
 		while($row=$result->fetch(PDO::FETCH_ASSOC))
 		{
-	
-			echo 'Name:         '.$row["Name"];
 			?>
-		<br>
-		<?php 
-		echo 'Mobile_no:	'.$row["Mobile_no"];
-		?>
-		<br>
-		<?php
-		echo 'Emailid:		 '.$row["Emailid"];
-		?>
-		<br>
-		<?php 
-		echo 'Address:       '.$row["Address"];
-		?>
-		<br>
-		<?php 
-		echo 'City:         '.$row["City"];
+			<h2>Profile</h2>
+			<table style="width:25%">
+			<tr>
+			<th>Name:</th>
+			<td>
+			<?php
+			echo $row["Name"];
+			?>
+				</td>
+				</tr>
+				<tr>
+				 <th>Mobile:</th>
+				 <td>
+				<?php 
+				echo $row["Mobile_no"];
+				?>
+				</td>
+				</tr>
+				<tr>
+				
+				<tr>
+				 <th>Email_Id:</th>
+				 <td>
+				
+				<?php
+				echo $row["Emailid"];
+				?>
+				</td>
+				<tr>
+				 <th>Address:</th>
+				 <td>
+				
+				<?php 
+				echo $row["Address"];
+				?>
+				</td>
+				</tr>
+				
+				<tr>
+				 <th>City:</th>
+				 <td>
+				
+				<?php 
+				echo $row["City"];
+				?>
+				</td>
+				</tr>
+				 </table>
+				<a href="">Edit</a>
+				<br>
+	<?php
 		}
 	}
 }

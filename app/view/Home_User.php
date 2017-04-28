@@ -1,9 +1,9 @@
 <?php
 
-if(isset($_SESSION['email_org']))
-{
-	header('location:Home_Org.php');
-}
+
+
+
+
 ?>
 
 
@@ -592,7 +592,7 @@ if(isset($_SESSION['email_org']))
           <div class="row">
             
             <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-              <div name="dash" class="image-box-thum">
+              <div id="dash" class="image-box-thum">
                 <img class="img-fullwidth" alt="" src="images/photos/2.jpg">
               </div>
               <div class="image-box-details pt-20 pb-sm-20">
@@ -628,223 +628,7 @@ if(isset($_SESSION['email_org']))
 
     
 
-    <!-- Section: Our Mission & Upcoming Events -->
-    <section id="event">
-      <div class="container">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-7">
-              <h3 class="text-uppercase title line-bottom mt-0 mb-30 mt-sm-40"><i class="fa fa-thumb-tack text-gray-darkgray mr-10"></i>Latest <span class="text-theme-colored">Causes</span></h3>
-              <div class="owl-carousel-2col" data-nav="true">
-                <div class="item">
-                  <div class="causes bg-white maxwidth500 mb-sm-30">
-                    <div class="thumb">
-                      <img src="images/project/2.jpg" alt="" class="img-fullwidth">
-                      <div class="overlay-donate-now">
-                        <a href="donate_if_login.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-                      </div>
-                    </div>
-                    <div class="progress-item mt-0">
-                      <div class="progress mb-0">
-                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
-                      </div>
-                    </div>
-                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
-                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
-                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
-                        <li class="pull-left pr-0">Raised: $1890</li>
-                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="causes bg-white maxwidth500 mb-sm-30">
-                    <div class="thumb">
-                      <img src="images/project/6.jpg" alt="" class="img-fullwidth">
-                      <div class="overlay-donate-now">
-                        <a href="donate_if_login.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-                      </div>
-                    </div>
-                    <div class="progress-item mt-0">
-                      <div class="progress mb-0">
-                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
-                      </div>
-                    </div>
-                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
-                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
-                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
-                        <li class="pull-left pr-0">Raised: $1890</li>
-                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="causes bg-white maxwidth500 mb-sm-30">
-                    <div class="thumb">
-                      <img src="images/project/7.jpg" alt="" class="img-fullwidth">
-                      <div class="overlay-donate-now">
-                        <a href="page-donate.html" class="btn btn-dark btn-theme-colored btn-flat btn-sm pull-left mt-10">Donate <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
-                      </div>
-                    </div>
-                    <div class="progress-item mt-0">
-                      <div class="progress mb-0">
-                        <div data-percent="84" class="progress-bar"><span class="percent">0</span></div>
-                      </div>
-                    </div>
-                    <div class="causes-details clearfix border-bottom p-15 pt-10 pb-10">
-                      <h5 class="font-weight-600 font-16"><a href="page-single-cause.html">Sponsor a child today</a></h5>
-                      <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
-                      <ul class="list-inline font-weight-600 border-top clearfix mt-20 pt-10">
-                        <li class="pull-left pr-0">Raised: $1890</li>
-                        <li class="text-theme-colored pull-right pr-0">Goal: $2500</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <h3 class="text-uppercase title line-bottom mt-0 mt-sm-30 mb-30"><i class="fa fa-calendar text-gray-darkgray mr-10"></i>Upcoming <span class="text-theme-colored">Events</span></h3>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb mr-20"><img alt="" src="images/events/1.jpg"></a>
-                <div class="post-right">
-                  <h4 class="mt-0 mb-5"><a href="page-single-event.html">Upcoming Event Title</a></h4>
-                  <ul class="list-inline font-12 mb-5">
-                    <li class="pr-0"><i class="fa fa-calendar mr-5"></i> June 26, 2016 |</li>
-                    <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>New York</li>
-                  </ul>
-                  <p class="mb-0 font-13">Lorem ipsum dolor sit amet, consectetur adipisicing elit, Quas eveniet.</p>
-                  <a class="text-theme-colored font-13" href="page-single-event.html">Read More →</a>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb mr-20"><img alt="" src="images/events/2.jpg"></a>
-                <div class="post-right">
-                  <h4 class="mt-0 mb-5"><a href="page-single-event.html">Upcoming Event Title</a></h4>
-                  <ul class="list-inline font-12 mb-5">
-                    <li class="pr-0"><i class="fa fa-calendar mr-5"></i> June 26, 2016 |</li>
-                    <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>New York</li>
-                  </ul>
-                  <p class="mb-0 font-13">Lorem ipsum dolor sit amet, consectetur adipisicing elit, Quas eveniet.</p>
-                  <a class="text-theme-colored font-13" href="page-single-event.html">Read More →</a>
-                </div>
-              </article>
-              <article class="post media-post clearfix pb-0 mb-10">
-                <a href="#" class="post-thumb mr-20"><img alt="" src="images/events/3.jpg"></a>
-                <div class="post-right">
-                  <h4 class="mt-0 mb-5"><a href="page-single-event.html">Upcoming Event Title</a></h4>
-                  <ul class="list-inline font-12 mb-5">
-                    <li class="pr-0"><i class="fa fa-calendar mr-5"></i> June 26, 2016 |</li>
-                    <li class="pl-5"><i class="fa fa-map-marker mr-5"></i>New York</li>
-                  </ul>
-                  <p class="mb-0 font-13">Lorem ipsum dolor sit amet, consectetur adipisicing elit, Quas eveniet.</p>
-                  <a class="text-theme-colored font-13" href="page-single-event.html">Read More →</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	    <section id="volunteers">
-      <div class="container">
-        <div class="section-title">
-          <div class="row">
-            <div class="col-md-6">
-              <h5 class="font-weight-300 m-0">What we can do?</h5>
-              <h2 class="mt-0 text-uppercase font-28">Our <span class="text-theme-colored font-weight-400">volunteers</span> <span class="font-30 text-theme-colored">.</span></h2>
-              <div class="icon">
-                <i class="fa fa-hospital-o"></i>
-              </div>
-            </div>
-            <div class="col-md-6"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus hic suscipit doloremque deleniti ipsa quia dolor laborum natus tenetur, excepturi?</p></div>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="owl-carousel-4col">
-              <div class="item">
-                <div class="team-member">
-                  <div class="volunteer-thumb"> <img src="images/team/1.jpg" alt="" class="img-fullwidth img-responsive"> </div>
-                  <div class="member-info mb-20">
-                    <div class="member-biography p-20">
-                      <h3 class="text-white mt-0 mb-10">Steve Smith</h3>
-                      <h5 class="text-white">Student</h5>
-                    </div>
-                    <div class="social-network bg-white text-center">
-                      <ul class="styled-icons icon-hover-theme-colored icon-circled pt-5">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <div class="volunteer-thumb"> <img src="images/team/2.jpg" alt="" class="img-fullwidth img-responsive"> </div>
-                  <div class="member-info mb-20">
-                    <div class="member-biography p-20">
-                      <h3 class="text-white mt-0 mb-10">Martina Alex</h3>
-                      <h5 class="text-white">Businessman</h5>
-                    </div>
-                    <div class="social-network bg-white text-center">
-                      <ul class="styled-icons icon-hover-theme-colored icon-circled pt-5">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <div class="volunteer-thumb"> <img src="images/team/3.jpg" alt="" class="img-fullwidth img-responsive"> </div>
-                  <div class="member-info mb-20">
-                    <div class="member-biography p-20">
-                      <h3 class="text-white mt-0 mb-10">Jessica Alba</h3>
-                      <h5 class="text-white">Student</h5>
-                    </div>
-                    <div class="social-network bg-white text-center">
-                      <ul class="styled-icons icon-hover-theme-colored icon-circled pt-5">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="team-member">
-                  <div class="volunteer-thumb"> <img src="images/team/4.jpg" alt="" class="img-fullwidth img-responsive"> </div>
-                  <div class="member-info mb-20">
-                    <div class="member-biography p-20">
-                      <h3 class="text-white mt-0 mb-10">Maria Andrew</h3>
-                      <h5 class="text-white">Student</h5>
-                    </div>
-                    <div class="social-network bg-white text-center">
-                      <ul class="styled-icons icon-hover-theme-colored icon-circled pt-5">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
     <!-- Section: Gallery -->
     <section id="gallery">
       <div class="container pb-10">

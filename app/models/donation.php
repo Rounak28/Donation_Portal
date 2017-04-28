@@ -37,7 +37,7 @@ if(isset($_SESSION["email_user"]))
 	if($result)
 	{
 		echo'Succesful';
-		header('location:../view/Home_User.html');
+		header('location:../view/Home_User.php');
 	}
 	else {echo'still some problem';}
 	}
@@ -67,7 +67,7 @@ $result=$stmt->execute();
 if($result)
 {
 	echo 'Success';
-	header('location:../view/');
+	header('location:../view/Index.php');
 }
 else {echo 'problem';}
 }

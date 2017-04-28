@@ -31,9 +31,10 @@ class org_signup
 		
 		if($this->org_model->store_org_data())
 		{
-		 	header('location:../app/../view/LoginForm.html');
+		 	header('location:/../app/view/LoginForm.php');
 		}
-		else {header('location:../app/../view/ngo_res.html');}
+		else 
+	{ echo 'Try Again';header('location:../app/../view/ngo_res.html');}
 		
 	}
 }

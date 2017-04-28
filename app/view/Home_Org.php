@@ -2,10 +2,7 @@
 <!DOCTYPE html>
 <?php
 
-if(isset($_SESSION['email_user']))
-{
-	header('location:./Home_User.php');
-}
+
 ?>
 <html dir="ltr" lang="en">
 
@@ -585,7 +582,7 @@ if(isset($_SESSION['email_user']))
           <div class="row">
             
             <div class="col-xs-12 col-sm-6 col-md-3 pb-sm-20">
-              <div name="dash" class="image-box-thum">
+              <div id="dash" class="image-box-thum">
                 <img class="img-fullwidth" alt="" src="images/photos/2.jpg">
               </div>
               <div class="image-box-details pt-20 pb-sm-20">

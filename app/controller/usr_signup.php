@@ -30,9 +30,9 @@ class usr_signup
 	$this->usr_model=new signupU($this->usrbean);
 	if($this->usr_model->store_usr_data())
 	{
-		header('location:../../app/view/LoginForm.html');
+		header('location:/../app/view/LoginForm.php');
 	}
-	else {header('location:../../app/view/user_reg.html');}
+	else {header('location:/../app/view/user_reg.php');}
 	
 	}	
 }

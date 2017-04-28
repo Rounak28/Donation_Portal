@@ -80,7 +80,7 @@
                 --> <h3 class="text-theme-colored mt-0 pt-5">Register Now</h3>
               <hr>
               
-              <form id="job_apply_form" name="job_apply_form" action="../../public/objects/user_controller.php" method="post">
+              <form name="job_apply_form" action="../../public/objects/user_controller.php" method="post">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -89,6 +89,7 @@
                     </div>
 					
                   </div>
+                  <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Email <small>*</small></label>
@@ -110,6 +111,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
+                     <div class="row">
                       <label>Address <small>*</small></label>
                       <input name="add"  type="text" placeholder="Address">
 					  
@@ -121,24 +123,28 @@
 				<p>
                   <div class="col-sm-6">
                     <div class="form-group">
+                    <div class="row">
                       <label>Mobile No. <small>*</small></label>
                       <input name="phone" type="digit" placeholder="Mobile No.">
                     </div>
                   </div>
                 </div>
 				<p>
+				<p>
                   <div class="col-sm-6">
                     <div class="form-group">
+                    <div class="row">
                       <label>Password <small>*</small></label>
                       <input name="pass" type="password" placeholder="**************">
                     </div>
                   </div>
                 </div>
 					<p>
-				 <div class="row">
+				 
 				 
                 <div class="col-sm-6">
                     <div class="form-group">
+                    <div class="row">
                       <label>Conform Password<small>*</small> </label></p>
                      
 					  <input name="cpass" type="password" placeholder="**************">
@@ -219,19 +225,11 @@
 	</div></div>
                  
 				
-                <div class="form-group">
-                  <label>File Upload</label>
-                  <input name="form_attachment" class="file" type="file" multiple data-show-upload="false" data-show-caption="true">
-                  <small>Maximum upload file size: 12 MB</small>
-                </div>
-                </div> 
+               
 <!--                    <button type="submit" class="btn btn-default btn-sm">Login</button>
     -->
 	 <input type="submit" value="Register me" /> 
-	</div>
-                  
-                  
-                  
+	</div> 
                 </form>
               </div>
             </div>

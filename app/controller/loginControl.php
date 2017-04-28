@@ -32,8 +32,7 @@ class loginControl
     }
     else if($login->login($email, $pass)=='usr')
     {
-    $_SESSION['email_user']=$this->email;	
-    	
+    $_SESSION['email_user']=$this->email;		
     	header('location:../../app/view/Home_User.php');
     	//echo'<p>Welcome ',$_SESSION["email"];
     }

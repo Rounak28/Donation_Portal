@@ -67,33 +67,11 @@ if(isset($_SESSION['email_org']))
 <![endif]-->
 </head>
 <body class="">
-<div id="wrapper" class="clearfix">
-  
-  
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="header-top sm-text-center bg-theme-colored">
-      <div class="container">
-        <div class="row">
-          
-          
-          <div class="col-md-2 text-right flip sm-text-center">
-            <div class="widget m-0">
-              <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm">
-                <li class="mb-0 pb-0"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li class="mb-0 pb-0"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li class="mb-0 pb-0"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li class="mb-0 pb-0"><a href="#"><i class="fa fa-linkedin text-white"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   <div class="header-nav">
       <div class="header-nav-wrapper navbar-scrolltofixed bg-lighter">
         <div class="container">
-          <nav id="menuzord-right" class="menuzord default no-bg"> <a class="menuzord-brand pull-left flip" href="index-mp-layout1.html"><img src="images/logo-wide.png" alt=""></a>
+          <nav id="menuzord-right" class="menuzord default no-bg"> <a class="menuzord-brand pull-left flip" href="Index.php"><img src="images/logo-wide.png" alt=""></a>
 			<br></br>
 			</nav>
 		</div>

@@ -1,14 +1,13 @@
 <?php
 include '../controller/loginControl.php';
-
-if(isset($_SESSION["email_user"]))
+/*if(isset($_SESSION["email_user"]))
 {
-header('location:Home_User.html');
+header('location:Home_User.php');
 }
 if(isset($_SESSION["email_org"]))
 {
-header('location:Home_Org.html');
-}
+header('location:Home_Org.php');
+}*/
 ?>
 <!DOCTYPE html>
 <html dir="rtl" lang="en">
